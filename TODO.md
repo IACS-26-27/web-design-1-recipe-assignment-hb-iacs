@@ -3,17 +3,17 @@ and what you have yet to complete.
 
 1. [ ] Make your initial TODO list...
 Ingredients
-For the streusel topping:
+  For the streusel topping:
 1 cup (125g) all-purpose flour
 1 cup (180g) brown sugar, packed
 1 teaspoon ground cinnamon
 Pinch kosher salt
 1/2 cup (113g) unsalted butter, softened
-For the cinnamon layer:
+  For the cinnamon layer:
 1/4 cup (50g) sugar
-1 tablespoon all-purpose flour
+1 tablespoon all-purpose flour  
 1/2 teaspoon ground cinnamon
-For the cake batter:
+  For the cake batter:
 3 cups (375g) all-purpose flour
 2 1/4 cups (450g) sugar
 3/4 teaspoon baking powder
