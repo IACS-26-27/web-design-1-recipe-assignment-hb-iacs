@@ -1,26 +1,67 @@
 /* Your styles go here! */
+
+/* Variables for the whole page go here */
+:root {
+  --page-background: rgb(241, 217, 151);
+  --heading-color: rgb(163, 73, 13);
+  --heading-color-shadow: rgb(86, 39, 7);
+  --backdrop-1: rgb(242, 212, 131);
+  --backdrop-2: rgb(255, 210, 85);
+  --brown: rgb(56, 22, 6);
+  --heading-font: sans-serif;
+}
+
+.kedebideri-regular {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Stying that changes the whole page goes here, primarily background. */
 body {
-  background-color:rgb(241, 217, 151);
+  font-family: "Kedebideri", sans-serif;
+  background-color: var(--page-background);
 }
 
+/* Manages what the title at the top of the page looks like. */
 h1 {
+  font-family: var(--heading-font);
   font-size: 60px;
-  color: rgb(163, 73, 13);
+  color: var(--heading-color);
   text-align: center;
-  border: 5px dashed rgb(18, 18, 18);
+  border-width: 5px;
+  border-style: dashed;
+  border-color: var(--brown);
   padding: 14px;
-  background-color: rgb(242, 212, 131);
-  text-shadow: 4px 2px rgb(86, 39, 7);
+  background-color: var(--backdrop-1);
+  text-shadow: 3px 2px var(--heading-color-shadow);
 }
 
+/* h2 is used for section headings. */
+h2 {
+  font-family: var(--heading-font);
+  padding: 10px;
+  padding-top: 1px;
+}
+
+/* Styles the recipe info section as a whole. */
 .recipe-info {
   float: right;
-  background-color: rgb(255, 210, 85);
+  margin-right: 15px;
+  background-color: var(--backdrop-2);
   padding: 10px;
-  border: 4px solid rgb(0, 0, 0);
+  border: 4px solid var(--brown);
   border-radius: 5px;
+  line-height: 3px;
+  width: 200px;
 }
 
+/* Not made for a specific purpose, but can be used to center text within it's container. */
 .center-text {
   text-align: center;
+}
+
+/* Styles text to have an indent. */
+.standard-indent {
+  text-indent: 20px;
 }
