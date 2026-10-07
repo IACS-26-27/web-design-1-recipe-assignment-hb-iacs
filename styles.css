@@ -36,6 +36,8 @@ h1 {
   padding: 14px;
   background-color: var(--backdrop-1);
   text-shadow: 3px 2px var(--heading-color-shadow);
+  margin: 10px;
+  margin-top: 40px;
 }
 
 /* h2 is used for section headings. */
@@ -47,26 +49,55 @@ h2 {
   text-shadow: 1.5px 1px var(--heading-color-shadow);
 }
 
+hr {
+  border: var(--heading-color);
+  height: 4px;
+  background-color: var(--brown);
+  margin: 30px auto;
+ width: 95%
+}
+
 /* Styles the recipe info section as a whole. */
 .recipe-info {
-  margin-left: 20px;
+  margin: 20px auto;
   background-color: var(--backdrop-2);
   padding: 10px;
   border: 4px solid var(--brown);
-  border-radius: 5px;
+  border-radius: 8px;
   line-height: 3px;
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Defines ingredient list box. */
 .ingredients {
   background-color: var(--backdrop-1);
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   border: 2px solid var(--brown);
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Defines properties for the baking steps section */
+.baking-steps {
+  background-color: var(--backdrop-1);
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  line-height: 25px;
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid var(--brown);
+}
+
+.baking-steps-title {
+  background-color: var(--backdrop-2);
+  padding-inline: 1px;
+  border: 3px solid var(--brown);
+  width: 100%;
+  max-width:500px;
+  margin: auto;
 }
 
 /* Styles text to be centered within it's container. */

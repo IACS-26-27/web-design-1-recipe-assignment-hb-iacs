@@ -27,7 +27,6 @@ Pinch kosher salt
 
 Steps:
 Preheat oven to 350F
-Spray a 9 x 13 in pan
   Making streusel layer
 In a small bowl, combine the flour, brown sugar, cinnamon, and salt. Use a fork to mash the butter into the mixture until completely combined and crumbly. Set aside.
   Cinnamon layer
@@ -40,6 +39,7 @@ In a medium bowl, whisk together the sour cream, milk, eggs, and vanilla until c
   Prepare cake
 Spread half of the batter into the prepared pan. Sprinkle the cinnamon-sugar layer over the top of the batter in an even layer. Spread the remaining batter over the top (this does require some patience since the batter likes to lift off the cinnamon-sugar layer). Top with the crumble mixture.
   Bake
+Spray a 9 x 13 in pan
 Bake for 55 minutes or until a toothpick inserted in the center comes out clean. Cool on a rack for 1 hour (or until the cake comes to room temperature) before serving.
 
 
