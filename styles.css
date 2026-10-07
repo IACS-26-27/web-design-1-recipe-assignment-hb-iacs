@@ -8,19 +8,12 @@
   --backdrop-1: rgb(242, 212, 131);
   --backdrop-2: rgb(255, 210, 85);
   --brown: rgb(56, 22, 6);
-  --heading-font: sans-serif;
-}
-
-/* cool font stuff */
-.kedebideri-regular {
-  font-family: "Kedebideri", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  --heading-font: "DM Serif Display", sans-serif;
 }
 
 /* Stying that changes the whole page goes here, primarily background. */
 body {
-  font-family: "Kedebideri", sans-serif;
+  font-family: "kedebideri", sans-serif;
   background-color: var(--page-background);
 }
 
@@ -30,6 +23,7 @@ h1 {
   font-size: 60px;
   color: var(--heading-color);
   text-align: center;
+  letter-spacing: 4px;
   border-width: 5px;
   border-style: dashed;
   border-color: var(--brown);
@@ -49,6 +43,7 @@ h2 {
   text-shadow: 1.5px 1px var(--heading-color-shadow);
 }
 
+/* Styles uses of the <hr> element,specificlly the one inebetween ingredients and making the coffee cake */
 hr {
   border: var(--heading-color);
   height: 4px;
@@ -59,6 +54,7 @@ hr {
 
 /* Styles the recipe info section as a whole. */
 .recipe-info {
+  box-sizing: border-box;
   margin: 20px auto;
   background-color: var(--backdrop-2);
   padding: 10px;
@@ -69,35 +65,87 @@ hr {
   max-width: 300px;
 }
 
+/* This section was modified from and inspired by Gemini written code */
+.ingredients-and-image,
+.ingredients-and-image *,
+.ingredients-and-image::after {
+  box-sizing: border-box;
+}
+
+/* This section was modified from and inspired by Gemini written code */
+.ingredients-and-image::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* This section was modified from and inspired by Gemini written code */
+.ingredients-and-image {
+  margin: auto;
+  max-width: 1100px;
+}
+
+/* This section was modified from and inspired by Gemini written code */
+.image {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* This section was modified from and inspired by Gemini written code */
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 90%;
+}
+
 /* Defines ingredient list box. */
 .ingredients {
+  float: left;
   background-color: var(--backdrop-1);
-  margin: 20px;
   padding: 10px;
   border: 2px solid var(--brown);
-  width: 100%;
-  max-width: 350px;
+  width: 50%;
 }
 
 /* Defines properties for the baking steps section */
 .baking-steps {
+  box-sizing: border-box;
   background-color: var(--backdrop-1);
-  margin: auto;
+  margin: 40px auto;
   padding: 30px;
   text-align: center;
   line-height: 25px;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
-  border: 2px solid var(--brown);
+  border: 4px dashed var(--brown);
 }
 
+/* Gives the step headings a really wide underline basically */
+.baking-steps h3 {
+  box-sizing: border-box;
+  border-bottom: 3px solid var(--brown);
+}
+
+/* Defines and stylizes the box surrounding the baking steps title and preperations */
 .baking-steps-title {
   background-color: var(--backdrop-2);
   padding-inline: 1px;
   border: 3px solid var(--brown);
   width: 100%;
-  max-width:500px;
+  max-width: 500px;
   margin: auto;
+}
+
+/* Kinda just cancels out the border applied to h3's in the baking-steps section */
+.baking-steps-title h3 {
+  border-bottom: 0px;
+}
+
+/* Gets rid of the built in margin of a figure */
+figure {
+  margin: 0;
 }
 
 /* Styles text to be centered within it's container. */
@@ -105,7 +153,9 @@ hr {
   text-align: center;
 }
 
+/* Makes the fractions fractions*/
 .fraction {
+  font-family: sans-serif;
   font-variant-numeric: diagonal-fractions;
 }
 
@@ -114,6 +164,19 @@ hr {
   text-indent: 20px;
 }
 
-.yellow-box {
-  background-color: var(--backdrop-2);
+/* sets the line height of lists, and removes default bullets*/
+li {
+  line-height: 25px;
+  list-style: none;
+}
+
+/* Makes a custom marker/bullet that is the egg emoji */
+li::before {
+  content: "🥚";
+  margin-right: 0.5em;
+}
+
+/* Creates unique list marker for one list item */
+.fry::before {
+  content: "🍳";
 }
