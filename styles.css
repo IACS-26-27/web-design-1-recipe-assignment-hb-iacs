@@ -9,12 +9,24 @@
   --backdrop-2: rgb(255, 210, 85);
   --brown: rgb(56, 22, 6);
   --heading-font: "DM Serif Display", sans-serif;
+  --standard-font: "kedebideri", sans-serif;
+}
+
+/* Defines header properties */
+header {
+  margin: auto;
 }
 
 /* Stying that changes the whole page goes here, primarily background. */
 body {
-  font-family: "kedebideri", sans-serif;
+  font-family: var(--standard-font);
   background-color: var(--page-background);
+  color: black;
+}
+
+/* Defines footer properties */
+footer {
+  margin: 20px;
 }
 
 /* Manages what the title at the top of the page looks like. */
@@ -43,9 +55,27 @@ h2 {
   text-shadow: 1.5px 1px var(--heading-color-shadow);
 }
 
+/* Stylized minor headings */
+h3 {
+  font-size: 22px;
+  font-family: var(--standard-font);
+  color: var(--brown);
+}
+
+/* Sets standard paragraph text parameters */
+p {
+  line-height: 25px;
+  font-size: 19px;
+}
+
+/* Primarily stylizes citations link */
+a:hover {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 /* Styles uses of the <hr> element,specificlly the one inebetween ingredients and making the coffee cake */
 hr {
-  border: var(--heading-color);
   height: 4px;
   background-color: var(--brown);
   margin: 30px auto;
@@ -60,39 +90,39 @@ hr {
   padding: 10px;
   border: 4px solid var(--brown);
   border-radius: 8px;
-  line-height: 3px;
+    line-height: 5px;
   width: 100%;
   max-width: 300px;
 }
 
-/* This section was modified from and inspired by Gemini written code */
+/* AI-assisted code, written myself but taught how to use these selectors and CSS concepts by Gemini on prompting, and code was written while being compared to similer Gemini written code*/
 .ingredients-and-image,
 .ingredients-and-image *,
 .ingredients-and-image::after {
   box-sizing: border-box;
 }
 
-/* This section was modified from and inspired by Gemini written code */
+/* AI-assisted code, written myself but taught how to use these selectors and CSS concepts by Gemini on prompting, and code was written while being compared to similer Gemini written code*/
 .ingredients-and-image::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* This section was modified from and inspired by Gemini written code */
+/* AI-assisted code, written myself but taught how to use these selectors and CSS concepts by Gemini on prompting, and code was written while being compared to similer Gemini written code*/
 .ingredients-and-image {
   margin: auto;
   max-width: 1100px;
 }
 
-/* This section was modified from and inspired by Gemini written code */
+/* AI-assisted code, written myself but taught how to use these selectors and CSS concepts by Gemini on prompting, and code was written while being compared to similer Gemini written code*/
 .image {
   float: left;
   width: 50%;
   padding: 10px;
 }
 
-/* This section was modified from and inspired by Gemini written code */
+/* AI-assisted code, written myself but taught how to use these selectors and CSS concepts by Gemini on prompting, and code was written while being compared to similer Gemini written code*/
 .image img {
   width: 100%;
   height: auto;
@@ -166,6 +196,7 @@ figure {
 
 /* sets the line height of lists, and removes default bullets*/
 li {
+  font-size:16px;
   line-height: 25px;
   list-style: none;
 }
